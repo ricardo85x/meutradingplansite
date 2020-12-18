@@ -1,0 +1,17 @@
+/* .tabulator .tabulator-tableHolder .tabulator-table .tabulator-row.negative a, .tabulator .tabulator-tableHolder .tabulator-table .tabulator-row .tabulator-cell.negative a {
+  box-shadow: inset 0 0 0 #e0b4b4;
+  background: #fff6f6!important;
+  color: #db2828!important;
+
+} */
+
+.tabulator .tabulator-tableHolder .tabulator-table a, .tabulator .tabulator-tableHolder .tabulator-table .tabulator-row  a {
+  
+  text-decoration: none;
+  color: inherit;
+
+}
+.tabulator .tabulator-tableHolder .tabulator-table a:hover, .tabulator .tabulator-tableHolder .tabulator-table .tabulator-row  a:hover {
+  text-decoration: underline;
+}
+

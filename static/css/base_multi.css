@@ -1,0 +1,114 @@
+.tabulator-placeholder span {
+  color: var(--dm-base-text-color)!important;
+}
+
+
+.f_pergunta {
+  color: var(--dm-button-primary-bg-color);
+  display: block;
+  font-size: 30px;
+}
+
+.f_resposta {
+  font-size: larger;
+  color: #ffffff;
+  display: block;
+
+}
+
+.custom-footer {
+  background-color: rgba(0, 0, 0, 0.025);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-left-color: transparent;
+  border-right-color: transparent;
+  border-bottom-color: transparent;
+}
+.dark-mode .custom-footer {
+  background-color: #111417;
+}
+.custom-footer a.custom-footer-link {
+  color: rgba(0, 0, 0, 0.65);
+}
+.dark-mode .custom-footer a.custom-footer-link {
+  color: rgba(255, 255, 255, 0.65);
+}
+.custom-footer a.custom-footer-link:hover,
+.dark-mode .custom-footer a.custom-footer-link:hover {
+  color: #1890ff;
+  text-decoration: none;
+}
+.custom-footer .btn-scroll-to-top {
+  border-radius: 3rem;
+}
+
+
+.custom-footer {
+  background-color: rgba(0, 0, 0, 0.025);
+  border-top-color: rgba(0, 0, 0, 0.1);
+}
+.dark-mode .custom-footer {
+  background-color: #111417;
+  border-top-color: rgba(0, 0, 0, 0.1);
+}
+.custom-footer a.custom-footer-link:hover,
+.dark-mode .custom-footer a.custom-footer-link:hover {
+  color: #1890ff;
+}
+
+
+
+div.ql-container.ql-snow {
+  font-size: 1.5em;
+}
+
+
+
+
+
+#tabela-tradingplan .tabulator-row, 
+#tabela-trades .tabulator-row , 
+#tabela-custo .tabulator-row , 
+#tabela-estrategias .tabulator-row {
+  cursor: default;
+}
+
+
+.dark-mode .badge.badge-warning {
+  background-color: var(--orange-color);
+  color: var(--text-color-on-success-color-bg);
+  /* border-color: var(--danger-color); */
+}
+
+.dark-mode .badge.badge-indigo {
+  background-color: var(--indigo-color);
+  color: var(--text-color-on-indigo-color-bg);
+  /* border-color: var(--danger-color); */
+}
+
+.dark-mode .badge.badge-pink {
+  background-color: var(--pink-color);
+  color: var(--text-color-on-pink-color-bg);
+  /* border-color: var(--danger-color); */
+}
+
+
+/* #tabela-estrategias .tabulator .tabulator-row.negative {
+  color: chartreuse !important;
+} */
+
+/* #tabela-estrategias .tabulator-row.tabulator-selectable:hover{
+  background-color: chartreuse;
+} */
+
+
+.tabulator-col  .tabulator-col-content .tabulator-header-filter input[type=search],
+.tabulator-col  .tabulator-col-content .tabulator-header-filter textarea {
+  color: var(--dm-input-text-color);
+}
+
+
+.dark-mode {
+
+  --tooltip-width: 25rem;
+
+}

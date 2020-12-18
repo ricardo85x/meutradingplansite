@@ -1,0 +1,483 @@
+.dark-mode .tags-look  > div {
+  border: 2px solid var(--gray-color-dark);
+  overflow: auto;
+  color: var(--dm-input-text-color-hover);
+  background-color: var(--gray-color-very-dark);
+}
+
+.dark-mode .tagify__input {
+  background-color: var(--dm-input-bg-color);
+}
+.dark-mode .tagify__input:hover {
+  background-color: var(--dm-input-bg-color-hover);
+}
+
+.dark-mode .tagify {
+  border: none;
+}
+
+ .tagify__input::before {
+  --placeholder-color: var(--lm-input-placeholder-text-color);
+} 
+
+.dark-mode .tagify__input::before {
+  --placeholder-color: var(--dm-input-placeholder-text-color);
+}
+
+.dark-mode .ql-editor.ql-blank::before {
+
+  color: var(--dm-input-placeholder-text-color);
+
+}
+
+.tags-look  > div {
+  border: 2px solid var(--gray-color-dark);
+  overflow: auto;
+  color: var(--lm-input-text-color);
+  background-color: var(--lm-input-bg-color-hover);
+}
+
+
+
+
+/* TABS */
+
+/* Style the tab */
+
+
+.tab {
+  margin-top: 10px;
+  /* margin-bottom: 10px; */
+  display: flex;
+  flex-wrap: wrap;
+  /* overflow: hidden; */
+  /* border: 1px solid var(--gray-color-dark); */
+  /* border-bottom: none; */
+  background-color: var(--blue-color);
+}
+
+.dark-mode .tab {
+  border: 1px solid var(--gray-color-dark);
+  background-color: var(--gray-color-very-dark);
+
+}
+
+
+/* Style the buttons that are used to open the tab content */
+.tab button {
+  font-weight: bold;
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  color: var(--dm-card-text-color);
+
+  /* border-right: var(--gray-color-dark) solid 0.5px; */
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover, .tab button.active:hover {
+  /* background-color: rgb(167, 166, 166); */
+  color: var(--primary-color-light);
+  background-color: var(--dm-card-border-color);
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  /* background-color: #ccc; */
+  background-color: var(--dm-card-bg-color);
+  color: var(--primary-color-light);
+
+}
+
+
+
+/* Style the tab content */
+.tabcontent {
+  background-color: #26282C;
+  /* display: none; */
+  padding: 6px 12px; 
+  /* border: 1px solid #b8b8b8;  */
+  border-top: none;
+  margin-bottom: 5px;
+}
+
+
+
+.tabcontent {
+  animation: fadeEffect 1s; /* Fading effect takes 1 second */
+}
+
+
+/* Go from zero to full opacity */
+@keyframes fadeEffect {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+
+
+.tabcontent.esconder {
+  display: none;
+}
+
+.info_header + .collapse.esconder {
+  display: none;
+}
+
+
+
+
+
+
+#dicas_list{
+	/* position: relative; */
+  /* height: 150px; */
+  display: flex;
+	padding: 0px;
+	margin: 0px;
+  list-style-type: none;
+  text-align: center;
+  flex-wrap: wrap;
+
+
+
+}
+
+.ditem {
+  /* position: absolute; */
+  display: none;
+	/* left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+	opacity: 0;
+  z-index: 1; */
+  
+  width: 100%;
+	height: 100%;
+
+	-webkit-transition: opacity 1s;
+	-moz-transition: opacity 1s;
+	-o-transition: opacity 1s;
+	transition: opacity 1s;
+}
+
+.ditem.showing {
+  display: block;
+}
+
+
+.ditem {
+  
+	font-size: 30px;
+	padding: 40px;
+	box-sizing: border-box;
+	background: #333;
+  color: #fff;
+  
+  border-radius: 5px;
+
+}
+
+.ditem.odd- {
+  background: var(--blue-box-shadow-color-darker);
+}
+
+.ditem.even- {
+  background: var(--green-box-shadow-color-darker);
+}
+
+
+
+.error_form {
+  color: crimson;
+  font-size: small;
+  display: list-item;                                                 
+  list-style-type: disc;      
+  list-style-position: inside;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.info_header + .info_text {
+
+  display: grid;
+  color: var(--dm-base-text-color); 
+
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+
+
+  border-radius: 10px;
+  box-shadow: 0 0 0 .6px #000;
+
+
+  background-color: var(--gray-color-very-dark);
+  padding: 15px;
+  font-size: larger;
+
+  margin-bottom: 5px;
+} 
+
+@media all and (max-width: 950px) {
+  .info_header + .info_text {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    font-size: 0.85em;
+
+  }
+}
+
+
+
+
+.info_header + .info_text label {
+  margin-right: 5px ;
+}
+
+.info_header + .header_status.line2 {
+  justify-content: space-around;
+
+}
+
+.info_header + .header_status label {
+  font-weight: bold;
+  
+}
+.info_header + .header_status> div {
+  padding: 5px;
+}
+
+.info_header + .header_status span {
+  color: green;
+  font-weight: bold;
+  font-size: 1.5em; 
+}
+
+.info_header + .header_status span.le_red {
+  color: rgb(207, 76, 0);
+}
+
+
+/* .tabulator .tabulator-tableHolder .tabulator-table .tabulator-row.negative, .tabulator .tabulator-tableHolder .tabulator-table .tabulator-row .tabulator-cell.negative {
+
+} */
+
+.tabulator_obs {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+
+.le_tagify {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.le_tagify span {
+
+  padding: 10px;
+  margin: 2px;
+  background-color: var(--secondary-color);
+  border-radius: 5px;
+
+  border-style: solid;
+  border-color: black;
+  border-width: .5px;
+  color: black;
+}
+
+.le_tagify span:hover {
+  background-color: var(--secondary-color-light);
+  border-width: 1px;
+}
+
+.le_tagify span a {
+  color: #000;
+  text-decoration: none;
+}
+
+
+
+.ql-toolbar.ql-snow button {
+  color: aquamarine;
+}
+
+
+
+
+
+
+
+.popup_quill {
+  max-width: 500px;
+  max-height: 600px;
+  /* background-color: burlywood;
+  border-color: crimson; */
+  border: none;
+}
+
+.popup_quill img {
+  max-width: 500px;
+  max-height: 300px;
+}
+
+
+
+.tabulator .tabulator-col-content textarea, .tabulator .tabulator-col-content input {
+  background-color: var(--dm-input-bg-color);
+  height: 36px;
+  border: none;
+}
+
+
+input[name=dica] {
+  background-color: var(--dm-input-bg-color);
+  margin: 0 10px 0 1px; 
+  color: var(--dm-input-text-color);
+}
+
+.info_header.dicas {
+
+  display: flex;
+  flex-wrap: wrap;
+
+  /* grid-template-columns: 130px 1fr 40px; */
+  
+
+  /* flex: 130px 100% 40px; */
+
+}
+/* 
+.info_header.dicas span:nth-of-type(1){
+  width: 130px;
+}
+
+
+
+.info_header.dicas span:nth-of-type(2){
+  width: 40px;
+} */
+
+
+.tabulator .tabulator-footer .tabulator-paginator {
+
+  display: inline-flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+.tabulator-cell .fa-trash-alt {
+  color: var(--red-color);
+}
+
+.tabulator-cell .fa-clone {
+  color: var(--yellow-color);
+}
+
+.tabulator-cell .fa-edit {
+  color: var(--blue-color);
+}
+
+.tabulator-cell .fa-eye {
+  color: var(--blue-color);
+}
+
+
+
+
+
+.card {
+  margin: var(--content-and-card-spacing-xs-half);
+  padding: var(--content-and-card-spacing-half);
+
+}
+
+
+
+
+[data-tab=metas] .card p {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+
+.bg-warning,
+body:not(.dark-mode) .bg-warning-lm,
+.dark-mode .bg-warning-dm {
+    background-color: var(--orange-color) !important;
+}
+
+
+
+.tabulator-row.negative:hover, .tabulator .tabulator-tableHolder .tabulator-table .tabulator-row .tabulator-cell.negative:hover {
+  background: var(--success-color-dark)!important;
+  color: white!important;
+}
+
+.tabulator-row.negative:hover, .tabulator .tabulator-tableHolder .tabulator-table .tabulator-row .tabulator-cell.negative {
+  background: var(--secondary-color-dark)!important;
+  color: greenyellow!important;
+}
+
+
+.tabulator-tableHolder {
+  background-color: var(--cor-bg-1);
+}
+
+.tabulator-row .tabulator-responsive-collapse strong {
+  color: var(--dm-link-text-color);
+}
+.tabulator-row .tabulator-responsive-collapse strong::after {
+  content: ":";
+}
+
+/* .tabulator-row .tabulator-responsive-collapse tr td:nth-of-type(1) {
+  background-color: var(--cor-bg-1);
+} */
+
+/* .tabulator-row .tabulator-responsive-collapse tr {
+   background-color: var(--cor-bg-1); 
+}
+
+
+div.tabulator-row .tabulator-responsive-collapse  {
+  background-color: var(--cor-bg-1)!important;
+} */
+
+
+.tabulator-row .tabulator-responsive-collapse {
+  border-top: none!important;
+}
+
+#tabela-trades {
+  background-color: var(--cor-bg-1)!important;
+}
+
+/* .tabulator-row .tabulator-responsive-collapse tr td {
+
+  display: ;
+} */
+
+
+
+.nav-link {
+  cursor: pointer;
+}
